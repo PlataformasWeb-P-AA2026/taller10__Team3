@@ -1,0 +1,18 @@
+<h2>Listado de Barrios</h2>
+
+<ul>
+    {% for b in barrios %}
+        <li>
+            {{ b.nombre }} (Parroquia: {{ b.parroquia.nombre }}) - 
+            [<a href="{% url 'editar_barrio' b.id %}">editar</a>]
+        </li>
+    {% empty %}
+        <li>No hay barrios registrados.</li>
+    {% endfor %}
+</ul>
+
+<br />
+[<a href="{% url 'listar_parroquias' %}">listar parroquias</a>] - 
+[<a href="{% url 'listar_barrios' %}">listar barrios</a>] - 
+[<a href="{% url 'crear_parroquia' %}">crear parroquia</a>] - 
+[<a href="{% url 'crear_barrio' %}">crear barrio</a>]
