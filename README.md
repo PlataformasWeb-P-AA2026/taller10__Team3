@@ -1,6 +1,7 @@
 # taller10
 
 Uso de admin y formularios básicos
+Integrantes: Alvaro Pacheco, Ronald Calderon, Josue Pardo
 
 ====
 
